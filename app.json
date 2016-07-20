@@ -1,0 +1,29 @@
+{
+    "default_icon": "default_icon.png",
+    "devtools_port": 9090,
+    "websocket_port": 9696,
+    "logging": true,
+    "startup_app": {
+        "name": "process-manager",
+        "version": "1.4.1",
+        "description": "Process Manager",
+        "url": "https://cdn.openfin.co/demos/process-manager/index.html",
+        "uuid": "process-manager",
+        "defaultHeight": 800,
+        "defaultWidth": 600,
+        "applicationIcon": "https://cdn.openfin.co/demos/process-manager/img/icon.ico",
+        "company": "Tullett Prebon",
+        "autoShow": true
+    },
+    "runtime": {
+        "arguments": "",
+        "version": "stable"
+    },
+    "splashScreenImage": "https://cdn.openfin.co/demos/process-manager/splashscreen/splash_process.png",
+    "shortcut": {
+        "company": "Tullett Prebon",
+        "description": "OpenFin Process Manager",
+        "icon": "https://cdn.openfin.co/demos/process-manager/img/icon.ico",
+        "name": "Process Manager"
+    }
+}
