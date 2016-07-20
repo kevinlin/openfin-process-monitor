@@ -1,0 +1,6 @@
+.editorconfig
+.eslintrc
+.hg
+.hgignore
+node_modules
+public/bower_components
