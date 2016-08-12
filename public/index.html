@@ -13,12 +13,8 @@
   <script src="bower_components/angularjs/angular.min.js"></script>
   <script src="bower_components/highcharts/highcharts.js"></script>
   <script src="bower_components/highcharts-ng/dist/highcharts-ng.min.js"></script>
-  <!-- For offline with restricted internet access
-  <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-  <script src="http://code.highcharts.com/highcharts.js"></script>
-  <script src="https://rawgithub.com/pablojim/highcharts-ng/master/src/highcharts-ng.js"></script>
-  -->
+  <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+  <script src="bower_components/ng-csv/build/ng-csv.min.js"></script>
 </head>
 <body ng-app="ProcessMonitor">
   <div class="container" ng-controller="MainController">
@@ -27,9 +23,11 @@
         <div class="row">
           <h2>OpenFin Process Monitor</h2>
           <p>
-            <a class="btn btn-success btn-md" role="button" ng-click="start()" ng-disabled="!canStart">Start</a>
-            <a class="btn btn-primary btn-md" role="button" ng-click="stop()" ng-disabled="!canStop">Stop</a>
-            <a class="btn btn-info btn-md" id="learn-more" role="button" ng-click="openLearnMoreUrl()">Learn more &raquo;</a>
+            <a class="btn btn-md btn-success" role="button" ng-click="start()" ng-disabled="!canStart">Start</a>
+            <a class="btn btn-md btn-primary" role="button" ng-click="stop()" ng-disabled="!canStop">Stop</a>
+            <a class="btn btn-md btn-info"    role="button" ng-csv="cpuChartConfig.series" quote-strings="\"" filename="cpuData.csv">Export CPU</a>
+            <a class="btn btn-md btn-info"    role="button" ng-csv="memoryChartConfig.series" quote-strings="\"" filename="memoryData.csv">Export Memory</a>
+            <a class="btn btn-md" id="learn-more" role="button" ng-click="openLearnMoreUrl()">Learn more &raquo;</a>
           </p>
         </div>
       </div>

@@ -1,1 +1,1 @@
-var app = angular.module('ProcessMonitor', ["highcharts-ng"]);
+var app = angular.module('ProcessMonitor', ['highcharts-ng', 'ngSanitize', 'ngCsv']);

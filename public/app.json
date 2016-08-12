@@ -16,5 +16,7 @@
         "description": "OpenFIN process monitor",
         "icon": "http://localhost:5000/favicon.ico",
         "name": "ProcessMonitor"
-    }
+    },
+    "assetsUrl": "https://shdtrading.tullettprebon.com/hosted/",
+    "rdmUrl": "file://none"
 }
